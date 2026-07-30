@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Campus Navigator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+   <header>
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="images/logo.png" alt="College Logo">
+            <span>Smart Campus Navigator</span>
+        </div>
+
+        <ul class="nav-links">
+           <li><a href="#">Home</a></li>
+<li><a href="#departments">Departments</a></li>
+<li><a href="#campus-map">Campus Map</a></li>
+<li><a href="#footer">About</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+    <div class="hero-content">
+    <h1>Welcome to Smart Campus Navigator</h1>
+
+    <p>Your guide to exploring the campus.</p>
+
+    <a href="#departments" class="btn">Explore Campus</a>
+</div>
+</section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+
+    <h2>Find Your Department</h2>
+
+   <input
+    type="text"
+    id="searchInput"
+    placeholder="🔍 Search CSE, ECE, Mechanical..."
+>
+
+</section>
+
+    <!-- Departments -->
+   <section class="departments" id="departments">
+
+        <h2>Departments</h2>
+
+        <div class="cards">
+
+            <div class="card" id="cse">
+    <h3>💻 CSE</h3>
+    <p>Labs, Faculty, Timetable</p>
+    <a href="cse.html" class="btn">View</a>
+</div>
+
+            <div class="card" id="mechanical">
+                <h3>⚙ Mechanical</h3>
+                <p>Workshops & Labs</p>
+                <a href="mechanical.html" class="btn">View</a>
+            </div>
+
+           <div class="card" id="cse-ai">
+    <h3>🤖 CSE-AI</h3>
+    <p>Artificial Intelligence Department</p>
+    <a href="cse-ai.html" class="btn">View</a>
+</div>
+
+            <div class="card" id="ece">
+    <h3>📡 ECE</h3>
+    <p>Electronics & Communication</p>
+    <a href="ece.html" class="btn">View</a>
+</div>
+<div class="card" id="chemical">
+    <h3>🧪 Chemical</h3>
+    <p>Process Engineering & Labs</p>
+    <a href="chemical.html" class="btn">View</a>
+</div>
+
+<div class="card" id="metallurgy">
+    <h3>🔩 Metallurgy</h3>
+    <p>Metals & Material Science</p>
+    <a href="metallurgy.html" class="btn">View</a>
+</div>
+    </section>
+    <section class="campus-map" id="campus-map">
+
+    <h2>Campus Map</h2>
+
+    <img src="images/campus.jpg" alt="Campus Map">
+
+</section>
+
+<section class="about" id="about">
+
+    <h2>About Smart Campus Navigator</h2>
+
+    <p>
+        Smart Campus Navigator is an IBM Hackathon project designed to help
+        students explore the campus, locate departments, and navigate easily.
+    </p>
+
+</section>
+
+<section class="features">
+
+        <h2>Why Use Smart Campus?</h2>
+
+        <div class="feature-box">
+
+            <div>
+                📍<h3>Easy Navigation</h3>
+                <p>Find any department quickly.</p>
+            </div>
+
+            <div>
+                🤖<h3>AI Assistant</h3>
+                <p>Ask questions instantly.</p>
+            </div>
+
+            <div>
+                🗺<h3>3D Campus</h3>
+                <p>Explore the campus virtually.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+  <footer id="footer">
+
+        <p>© 2026 Smart Campus Navigator | IBM Hackathon Project</p>
+
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
