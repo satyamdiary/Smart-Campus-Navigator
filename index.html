@@ -73,6 +73,42 @@
     placeholder="🔍 Search CSE, ECE, Mechanical..."
 >
 
+<button id="voiceBtn" class="voice-btn">
+    🎤 Voice Search
+</button>
+</section>
+
+<!-- AI Route Recommendation -->
+<section class="ai-route">
+    <h2>🤖 AI Route Recommendation</h2>
+
+    <div class="route-card">
+
+        <label><b>Current Location</b></label>
+        <select id="currentLocation">
+            <option>Main Gate</option>
+            <option>Library</option>
+            <option>Admin Block</option>
+            <option>Cafeteria</option>
+        </select>
+
+        <label><b>Destination</b></label>
+        <select id="destination">
+            <option>CSE Department</option>
+            <option>ECE Department</option>
+            <option>Mechanical Department</option>
+            <option>Chemical Department</option>
+        </select>
+
+        <button onclick="generateRoute()" class="route-btn">
+            🚀 Generate Smart Route
+        </button>
+
+        <div id="routeResult" class="route-result">
+            Your AI recommended route will appear here.
+        </div>
+
+    </div>
 </section>
 
     <!-- Departments -->
@@ -204,6 +240,72 @@
         </div>
 
     </section>
+    <section class="future-ai">
+
+    <h2>🚀 Future AI Innovations</h2>
+
+    <div class="future-grid">
+
+        <div class="future-card">
+            <h3>🧠 AI Route Recommendation</h3>
+            <p>Suggests the fastest and smartest route across the campus.</p>
+        </div>
+
+        <div class="future-card">
+            <h3>🎤 Voice Navigation</h3>
+            <p>Students can navigate the campus using voice commands.</p>
+        </div>
+
+        <div class="future-card">
+            <h3>📷 QR Smart Navigation</h3>
+            <p>Scan a QR code on any building to get instant directions.</p>
+        </div>
+
+        <div class="future-card">
+            <h3>♿ Accessibility Mode</h3>
+            <p>Provides wheelchair-friendly and accessible routes.</p>
+        </div>
+
+        <div class="future-card">
+            <h3>🚨 Emergency Assistance</h3>
+            <p>Instant route to medical centre, security office and emergency exits.</p>
+        </div>
+
+        <div class="future-card">
+            <h3>📊 Crowd Prediction</h3>
+            <p>AI recommends less crowded paths and buildings in real time.</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="live-status">
+    <h2>📡 Live Campus Status</h2>
+
+    <div class="status-grid">
+
+        <div class="status-card">
+            <h3>📍 Cafeteria</h3>
+            <span class="green">🟢 Low Crowd</span>
+        </div>
+
+        <div class="status-card">
+            <h3>🏋️ Open Gym</h3>
+            <span class="yellow">🟡 Moderate Crowd</span>
+        </div>
+
+        <div class="status-card">
+            <h3>🏊 Swimming Pool</h3>
+            <span class="red">🔴 Busy</span>
+        </div>
+
+        <div class="status-card">
+            <h3>🅿 Parking</h3>
+            <span class="green">🟢 Available</span>
+        </div>
+
+    </div>
+</section>
 
     <button id="topBtn">⬆</button>
 
@@ -216,5 +318,10 @@
     </footer>
 
 <script src="script.js"></script>
+<button class="sos-btn" onclick="emergencyHelp()">
+    🚨 SOS
+</button>
+
+
 </body>
 </html>
